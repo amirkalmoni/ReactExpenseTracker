@@ -1,14 +1,14 @@
 import React, {createContext, useReducer} from 'react'
 import AppReducer from './AppReducer'
-//import uuid from 'react-uuid'
+import uuid from 'react-uuid'
 
 //Initialized state
 const initialState = {
     transactions: [
-        { id: 1, text: 'Flower', amount: -20 },
-        { id: 2, text: 'Salary', amount: 300 },
-        { id: 3, text: 'Book', amount: -10 },
-        { id: 4, text: 'Camera', amount: 150 }
+        { id: uuid(), text: 'Flower', amount: -20 },
+        { id: uuid(), text: 'Salary', amount: 300 },
+        { id: uuid(), text: 'Book', amount: -10 },
+        { id: uuid(), text: 'Camera', amount: 150 }
     ] 
 }
 
